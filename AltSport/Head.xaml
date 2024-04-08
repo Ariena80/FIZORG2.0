@@ -1,0 +1,81 @@
+﻿<Window x:Class="AltSport.Head"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AltSport"
+        mc:Ignorable="d"
+        Title="Главная страница" Background="BlueViolet" Height="600" Width="800" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen" WindowState="Normal" WindowStyle="SingleBorderWindow" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="45*"/>
+            <ColumnDefinition Width="312*"/>
+            <ColumnDefinition Width="45*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Image x:Name="mainImage" Margin="10 10 550 40">
+                <Image.Source>
+                    <TransformedBitmap Source="logotip.jpg"/>
+                </Image.Source>
+            </Image>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="0" Margin="0,0,0,34" Grid.RowSpan="2">
+            <TextBlock x:Name="Authorization" Text ="Главная страница" TextWrapping="WrapWithOverflow" Foreground="#87ff9b" FontFamily="Arial Black" FontSize="30"
+            HorizontalAlignment="Left" Margin="160 70 110 70" Width="422"/>
+        </Grid>
+        <Grid Grid.Column="1" Margin="10,146,14,0" Grid.RowSpan="3">
+            <Button Content="Добавить команду" Click="Add_Click" Background="#87ff9b" FontSize="15" FontFamily="Britannic Bold" Margin="20 60 330 10">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="25"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="btnSchedule" Content="Расписание спортивных мероприятий" Background="#87ff9b" FontSize="15" FontFamily="Britannic Bold" Margin="330 60 20 10">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="25"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Column="2" Grid.Row="2" Content="Мастер-классы" Background="#87ff9b" FontSize="15" FontFamily="Britannic Bold" Margin="20 160 330 -90">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="25"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="btnEventSec" Content="Расписание спортивных секций" Background="#87ff9b" FontSize="15" FontFamily="Britannic Bold" Margin="330 160 20 -90">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="25"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Column="2" Grid.Row="2" Content="Результаты соревнований" Background="#87ff9b" FontSize="15" FontFamily="Britannic Bold" Margin="20 260 330 -190">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="25"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="Расписание собраний" Background="#87ff9b" FontSize="15" FontFamily="Britannic Bold" Margin="330 260 20 -190">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="25"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

@@ -8,11 +8,12 @@
         Title="Авторизация" Background="BlueViolet" Height="600" Width="800" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen" WindowState="Normal" WindowStyle="SingleBorderWindow" >
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="129*"/>
-            <ColumnDefinition Width="542*"/>
-            <ColumnDefinition Width="129*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -20,36 +21,15 @@
         </Grid.RowDefinitions>
 
         <Grid Grid.Column="0" Grid.Row="0">
-            <Image x:Name="mainImage" Margin="10 10 550 40">
+            <Image x:Name="Logo" Margin="25">
                 <Image.Source>
-                    <TransformedBitmap Source="logotip.jpg"/>
+                    <FormatConvertedBitmap Source="logotip.jpg"/>
                 </Image.Source>
             </Image>
         </Grid>
 
-        <Grid Grid.Column="0" Grid.Row="3">
-            <StackPanel Margin="0 60 30 10">
-                <Image Source="/res/logosv.jpg" RenderTransformOrigin="0.75,1.031" Height="80" Width="85" HorizontalAlignment="Center" VerticalAlignment="Center" />
-            </StackPanel>
-        </Grid>
-
-    <Grid Grid.Column="1" Grid.Row="0">
-            <TextBlock x:Name="Authorization" Text ="ССК «КРАСНЫЕ ВОЛКИ»" TextWrapping="WrapWithOverflow" Foreground="#87ff9b" FontFamily="Arial Black" FontSize="30"
-                HorizontalAlignment="Left" Margin="75,73,0,35" Width="422"/>
-        </Grid>
-
-        <Grid Grid.Column="1" Grid.Row="1">
-            <TextBlock x:Name="Login1" Text ="Логин" TextWrapping="WrapWithOverflow" Foreground="#87ff9b" FontFamily="Arial Black" FontSize="20" HorizontalAlignment="Center" Margin="0,38,0,78" Width="70"/>
-            <TextBox x:Name ="Login" FontSize="20" FontFamily="Ariel"  HorizontalContentAlignment="Center" Margin="100,73,100,33" BorderBrush="#87ff9b" Background="WhiteSmoke" TextChanged="Login_TextChanged" />
-        </Grid>
-
-        <Grid Grid.Column="1" Grid.Row="2">
-            <TextBlock x:Name="Password1" Text ="Пароль" TextWrapping="WrapWithOverflow" Foreground="#87ff9b" FontFamily="Arial Black" FontSize="20" HorizontalAlignment="Center" Margin="0,10,0,109" Width="82"/>
-            <PasswordBox x:Name ="Password" FontSize="20" FontFamily="Ariel" HorizontalContentAlignment="Center" Margin="100,42,100,64" BorderBrush="#87ff9b" Background="WhiteSmoke" />
-        </Grid>
-
         <Grid Grid.Column="1" Grid.Row="3">
-            <Button Content="Войти" Click="Vhod_Click" Background="#87ff9b" FontSize="15" FontFamily="Arial Black" Margin="100,0,100,93">
+            <Button Content="Войти" Click="Vhod_Click" Background="#87ff9b" FontSize="15" FontFamily="Britannic Bold" Margin="50 20 50 30">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="25"/>
@@ -57,9 +37,15 @@
                 </Button.Resources>
             </Button>
         </Grid>
-
-        <Grid Grid.Column="3" Grid.Row="3">
-            <TextBlock Text="@ArieShka" FontFamily="Arial Black" FontSize="15" FontWeight="DemiBold" HorizontalAlignment="Center" Margin="0,115,0,10" Width="109"></TextBlock>
+        <Grid Grid.Column="1" Grid.Row="0">
+            <TextBlock x:Name="Wolf" Text="ССК «КРАСНЫЕ ВОЛКИ»" Foreground="#87ff9b" FontFamily="Arial Black" FontSize="40" VerticalAlignment="Top" Margin="0,97,-165,0"/>
         </Grid>
+
+        <Grid>
+            <TextBlock Background="#87ff9b"  >Логин</TextBlock>
+        </Grid>
+
     </Grid>
+
+
 </Window>

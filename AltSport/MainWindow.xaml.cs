@@ -19,6 +19,7 @@ namespace AltSport
         public MainWindow()
         {
             InitializeComponent();
+          
         }
 
         private void Login_TextChanged(object sender, TextChangedEventArgs e)

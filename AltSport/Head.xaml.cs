@@ -22,13 +22,48 @@ namespace AltSport
         public Head()
         {
             InitializeComponent();
-            btnSchedule.Content = "Расписание спортивных\nмероприятий";
-            btnEventSec.Content = "Расписание спортивных\nсекций";
+            
+            btnSchedule.Content = " Расписание спортивных\n мероприятий";
+            btnEventSec.Content = " Расписание спортивных\n секций";
+            
+           
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void btnSchedule_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnMaster_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnResult_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnEventSec_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnMeeting_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnVihod_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            Close();
         }
     }
 }

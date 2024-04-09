@@ -10,14 +10,13 @@
 
   <ItemGroup>
     <None Remove="logotip.jpg" />
-    <None Remove="logotipfull.jpg" />
+    <None Remove="res\2.png" />
+    <None Remove="res\logotip.jpg" />
     <None Remove="res\logotipfull.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="logotip.jpg" />
-    <Resource Include="logotipfull.jpg" />
-    <Resource Include="res\logotipfull.jpg" />
+    <Resource Include="res\logotip.jpg" />
   </ItemGroup>
 
 </Project>

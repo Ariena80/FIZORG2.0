@@ -65,5 +65,12 @@ namespace AltSport
             mainWindow.Show();
             Close();
         }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            Close();    
+        }
     }
 }

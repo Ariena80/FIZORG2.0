@@ -19,6 +19,7 @@ namespace AltSport
         public MainWindow()
         {
             InitializeComponent();
+            
           
         }
 
@@ -32,6 +33,11 @@ namespace AltSport
             Head head = new Head();
             head.Show();
             Close();
+        }
+
+        private void PasswordBox_MouseEnter(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }

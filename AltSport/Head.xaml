@@ -39,35 +39,35 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="btnSchedule" Content="Расписание спортивных мероприятий" Background="#87ff9b" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Cascadia Mono" Margin="450 184 -485 110" Click="btnSchedule_Click">
+            <Button x:Name="btnSchedule" Content="Расписание спортивных мероприятий" Background="#87ff9b" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Cascadia Mono" Margin="450 184 -485 110" Click="BtnSchedule_Click">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="25"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Content="Мастер-классы" Background="#87ff9b" FontSize="15" HorizontalContentAlignment="Center" FontFamily="Cascadia Mono" Margin="137 303 -160 -15" Click="btnMaster_Click">
+            <Button Content="Мастер-классы" Background="#87ff9b" FontSize="15" HorizontalContentAlignment="Center" FontFamily="Cascadia Mono" Margin="137 303 -160 -15" Click="BtnMaster_Click">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="25"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="btnEventSec" Content="Расписание спортивных секций" Background="#87ff9b" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Cascadia Mono" Margin="450 303 -485 -15" Click="btnEventSec_Click">
+            <Button x:Name="btnEventSec" Content="Расписание спортивных секций" Background="#87ff9b" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Cascadia Mono" Margin="450 303 -485 -15" Click="BtnEventSec_Click">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="25"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button  x:Name="btnResult" Grid.Column="2" Grid.Row="2" Content="Результаты соревнований" Background="#87ff9b" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Cascadia Mono" Margin="137 425 -160 -135" Click="btnResult_Click">
+            <Button  x:Name="btnResult" Grid.Column="2" Grid.Row="2" Content="Результаты соревнований" Background="#87ff9b" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Cascadia Mono" Margin="137 425 -160 -135" Click="BtnResult_Click">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="25"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="btnMeeting" Content="Расписание собраний" Background="#87ff9b" FontSize="15" FontFamily="Cascadia Mono" Margin="450 425 -485 -135" Click="btnMeeting_Click">
+            <Button x:Name="btnMeeting" Content="Расписание собраний" Background="#87ff9b" FontSize="15" FontFamily="Cascadia Mono" Margin="450 425 -485 -135" Click="BtnMeeting_Click">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="25"/>
@@ -76,7 +76,7 @@
             </Button>
 
             <Grid Grid.Row="2" Grid.Column="2" >
-                <Button x:Name="btnExit" Content="Выйти из аккаунта" Background="#87ff9b" FontSize="15" FontFamily="Cascadia Mono" Margin="599 20 -560 330 " Click="btnExit_Click" >
+                <Button x:Name="btnExit" Content="Выйти из аккаунта" Background="#87ff9b" FontSize="15" FontFamily="Cascadia Mono" Margin="599 20 -560 330 " Click="BtnExit_Click" >
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="5"/>

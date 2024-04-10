@@ -23,5 +23,52 @@ namespace AltSport
         {
             InitializeComponent();
         }
+
+        private void Bascket_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+
+        private void Valey_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+
+        private void Foot_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+
+        private void Ceber_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+
+        private void Shah_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+
+        private void Tennis_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+
+        private void Dop_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Back_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Head head = new Head(); 
+            head.Show();
+            Close();
+        }
     }
 }

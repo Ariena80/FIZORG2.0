@@ -11,12 +11,29 @@
   <ItemGroup>
     <None Remove="logotip.jpg" />
     <None Remove="res\2.png" />
+    <None Remove="res\back.jpg" />
+    <None Remove="res\basketball.jpg" />
+    <None Remove="res\cibersport.jpg" />
+    <None Remove="res\doppp.jpg" />
+    <None Remove="res\football.jpg" />
     <None Remove="res\logotip.jpg" />
     <None Remove="res\logotipfull.jpg" />
+    <None Remove="res\nastol.tenis.jpg" />
+    <None Remove="res\nastol.tennis.jpg" />
+    <None Remove="res\shahmati.jpg" />
+    <None Remove="res\valeyball.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="res\back.jpg" />
+    <Resource Include="res\basketball.jpg" />
+    <Resource Include="res\cibersport.jpg" />
+    <Resource Include="res\doppp.jpg" />
+    <Resource Include="res\football.jpg" />
     <Resource Include="res\logotip.jpg" />
+    <Resource Include="res\nastol.tennis.jpg" />
+    <Resource Include="res\shahmati.jpg" />
+    <Resource Include="res\valeyball.jpg" />
   </ItemGroup>
 
 </Project>

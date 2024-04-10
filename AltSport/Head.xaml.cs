@@ -36,39 +36,32 @@ namespace AltSport
             Close();
         }
 
-        private void btnSchedule_Click(object sender, RoutedEventArgs e)
+        private void BtnSchedule_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void btnMaster_Click(object sender, RoutedEventArgs e)
+        private void BtnMaster_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void btnResult_Click(object sender, RoutedEventArgs e)
+        private void BtnResult_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void btnEventSec_Click(object sender, RoutedEventArgs e)
+        private void BtnEventSec_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void btnMeeting_Click(object sender, RoutedEventArgs e)
+        private void BtnMeeting_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void btnVihod_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            Close();
-        }
-
-        private void btnExit_Click(object sender, RoutedEventArgs e)
+        private void BtnExit_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();

@@ -25,7 +25,7 @@
 
         <StackPanel Grid.Column="1" Grid.Row="0">
             <Grid Grid.ColumnSpan="2">
-                <TextBlock Text="ССК «КРАСНЫЕ ВОЛКИ»" FontSize="30" FontFamily="Cooper Black" VerticalAlignment="Top" Foreground="#87ff9b" Margin="-30,26,-30,0"/>
+                <TextBlock Text="ССК «КРАСНЫЕ ВОЛКИ»" FontSize="30" FontFamily="Cooper Black" VerticalAlignment="Top" Foreground="#87ff9b" Margin="0,26,-60,0"/>
             </Grid>
         </StackPanel>
 

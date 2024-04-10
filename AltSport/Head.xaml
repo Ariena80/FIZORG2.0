@@ -20,13 +20,17 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Column="0" Grid.Row="0">
-            <Image Source="/logotip.jpg" Margin="30" />
-        </Grid>
+        <StackPanel Grid.Column="0" Grid.Row="0">
+            <Grid>
+                <Image Source="/res/logotip.jpg" Margin="42,42,42,41" />
+            </Grid>
+        </StackPanel>
 
-        <Grid Grid.Column="1" Grid.Row="0">
-            <TextBlock Text="Главная страница" Foreground="#87ff9b" FontFamily="Arial Black" FontSize="30" HorizontalAlignment="Left" Margin="44,70,0,70" Width="320"/>
-        </Grid>
+        <StackPanel Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid>
+                <TextBlock Text="Главаная страница" Foreground="#87ff9b" FontFamily="Bodoni MT Black" FontSize="30" HorizontalAlignment="Stretch" VerticalAlignment="Center" Width="550" Margin="50"/>
+            </Grid>
+        </StackPanel>
         <Grid Grid.RowSpan="3">
             <Button x:Name="btnAdd" Content="Добавить команду" Click="Add_Click" Background="#87ff9b" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="15" FontFamily="Cascadia Mono" Margin="137 184 -160 110">
                 <Button.Resources>

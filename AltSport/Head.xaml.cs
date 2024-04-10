@@ -31,7 +31,9 @@ namespace AltSport
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-
+            Add add = new Add();
+            add.Show();
+            Close();
         }
 
         private void btnSchedule_Click(object sender, RoutedEventArgs e)

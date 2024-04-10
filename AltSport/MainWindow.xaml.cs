@@ -20,7 +20,6 @@ namespace AltSport
         {
             InitializeComponent();
             
-          
         }
 
         private void Login_TextChanged(object sender, TextChangedEventArgs e)

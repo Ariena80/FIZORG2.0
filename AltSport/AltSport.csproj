@@ -14,8 +14,10 @@
     <None Remove="res\back.jpg" />
     <None Remove="res\basketball.jpg" />
     <None Remove="res\cibersport.jpg" />
+    <None Remove="res\command.jpg" />
     <None Remove="res\doppp.jpg" />
     <None Remove="res\football.jpg" />
+    <None Remove="res\individ.jpg" />
     <None Remove="res\logotip.jpg" />
     <None Remove="res\logotipfull.jpg" />
     <None Remove="res\nastol.tenis.jpg" />
@@ -25,11 +27,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="res\back.jpg" />
     <Resource Include="res\basketball.jpg" />
     <Resource Include="res\cibersport.jpg" />
+    <Resource Include="res\command.jpg" />
     <Resource Include="res\doppp.jpg" />
     <Resource Include="res\football.jpg" />
+    <Resource Include="res\individ.jpg" />
     <Resource Include="res\logotip.jpg" />
     <Resource Include="res\nastol.tennis.jpg" />
     <Resource Include="res\shahmati.jpg" />

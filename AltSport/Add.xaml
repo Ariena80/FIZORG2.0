@@ -6,63 +6,25 @@
         xmlns:local="clr-namespace:AltSport"
         mc:Ignorable="d"
         Title="Добавление команды" Background="BlueViolet" Height="600" Width="800" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen" WindowState="Normal" WindowStyle="SingleBorderWindow">
-    <Grid Height="584" VerticalAlignment="Bottom">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+    <Grid >
         <Grid.RowDefinitions>
-            <RowDefinition Height="1"/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="17*"/>
-                <ColumnDefinition Width="33*"/>
-            </Grid.ColumnDefinitions>
-        </Grid>
-        <Grid Grid.Row="1" Margin="3,53,197,92" Grid.RowSpan="2" Grid.ColumnSpan="2">
-            <Image Source="/res/valeyball.jpg" Height="120" Margin="100,0,-100,6"  MouseDown="Valey_MouseDown" />
-        </Grid>
-        <Grid Grid.Row="2" Margin="3,23,197,121" Grid.RowSpan="2" Grid.ColumnSpan="2">
-            <Image Source="/res/basketball.jpg" Height="120" Margin="100,51,-100,-45" MouseDown="Bascket_MouseDown" />
-        </Grid>
-        <Grid Grid.Row="1" Grid.ColumnSpan="2" Margin="3,53,197,92" Grid.RowSpan="2" Grid.Column="2">
-            <Image Source="/res/football.jpg" Height="120" Margin="99,0,-99,6" MouseDown="Foot_MouseDown"/>
-        </Grid>
-        <Grid Grid.Row="2" Margin="3,23,197,121" Grid.RowSpan="2" Grid.ColumnSpan="2" Grid.Column="1">
-            <Image Source="/res/shahmati.jpg" Height="120" Margin="100,51,-100,-45" MouseDown="Shah_MouseDown" />
-        </Grid>
-        <Grid Grid.Row="1" Margin="3,53,197,92" Grid.RowSpan="2" Grid.ColumnSpan="2" Grid.Column="1">
-            <Image Source="/res/nastol.tennis.jpg" Height="120" Margin="100,10,-100,16" MouseDown="Tennis_MouseDown"/>
-        </Grid>
-        <Grid Grid.Row="1" Margin="3,53,197,92" Grid.RowSpan="2" Grid.ColumnSpan="2" Grid.Column="1">
-            <Image Source="/res/doppp.jpg" Height="120" Margin="111,340,-85,-314" MouseDown="Dop_MouseDown"/>
-        </Grid>
-        <Image Source="res/cibersport.jpg" Height="120" Margin="103,87,97,84" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Row="2" MouseDown="Ceber_MouseDown"/>
-
-        <TextBlock x:Name="Bascket" Text="Баскетбол" FontSize="20" Margin="0,58,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="3" Foreground="#87ff9b" MouseDown="Bascket_MouseDown" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="Valey" Text="Волейбол" FontSize="20" Margin="157,32,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="2" Foreground="#87ff9b" MouseDown="Valey_MouseDown" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="Foot" Text="Футбол" FontSize="20" Margin="170,32,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="2" Foreground="#87ff9b" MouseDown="Foot_MouseDown" Grid.Column="2" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="Ceber" Text="Киберспорт" FontSize="20" Margin="144,58,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="3" Foreground="#87ff9b" MouseDown="Ceber_MouseDown" Grid.Column="2" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="Shah" Text="Шахматы" FontSize="20" Margin="161,58,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="3" Foreground="#87ff9b" MouseDown="Shah_MouseDown" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="Tennis" Text="Настольный теннис" FontSize="20"  VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="2" Foreground="#87ff9b" MouseDown="Tennis_MouseDown" Height="26" Width="188" Margin="109,32,0,0" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="Dop" Text="Другие" FontSize="20"  VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="4" Foreground="#87ff9b" MouseDown="Dop_MouseDown" Grid.Column="1" Height="26" Width="68" Margin="0,73,0,0" Grid.ColumnSpan="2"/>
-
-        <Grid Grid.Column="0" Grid.Row="4">
-            <Image Source="/res/back.jpg" Margin="26,72,128,17" MouseDown="Back_MouseDown"/>
-            <TextBlock x:Name="Back" Text="Вернуться" Background="#8a2be2" Foreground="#87ff9b" FontSize="15" FontFamily="Cascadia Mono" Margin="10,123,106,4" MouseDown="Back_MouseDown"></TextBlock>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Image Source="/res/individ.jpg" MouseDown="Individ_MouseDown" />
+            <TextBlock Foreground="#87ff9b" Text="Индивидуальные игры" FontSize="30" Height="45" Margin="25,185,0,-30" FontFamily="Britannic Bold" MouseDown="Individ_MouseDown"/>
         </Grid>
 
+        <Grid Grid.Row="1">
+            <Image Source="/res/command.jpg" MouseDown="Command_MouseDown"/>
+            <TextBlock Foreground="#87ff9b" Text="Командные игры" FontSize="30" Height="45" Margin="60,185,79,-30" FontFamily="Britannic Bold" MouseDown="Command_MouseDown"/>
+        </Grid>
     </Grid>
-
-
-
-
 
 </Window>

@@ -39,10 +39,10 @@
             </Button>
         </Grid>
         <TextBlock Text="Логин" FontSize="20" Foreground="#87ff9b" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Cooper Std Black" Grid.Column="1" Margin="0,5,0,0" Height="24" Width="62" Grid.Row="1" Grid.RowSpan="2"/>
-        <TextBox HorizontalContentAlignment="Left" FontSize="20" Background="FloralWhite" VerticalContentAlignment="Center" Grid.Column="1" Width="240" Height="45" Grid.Row="2" MaxLength="10"/>
+        <TextBox x:Name="textBoxLogin" FontSize="20" Background="FloralWhite" VerticalContentAlignment="Center" Grid.Column="1" Width="240" Height="45" Grid.Row="2" MaxLength="10"/>
 
         <TextBlock Text="Пароль" FontSize="20" Foreground="#87ff9b" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Cooper Std Black" Grid.Column="1" Margin="0,12,0,0" Grid.Row="3" Height="24" Width="78" Grid.RowSpan="2"/>
-        <PasswordBox HorizontalAlignment="Center" FontSize="20"  VerticalAlignment="Center" Width="240" Height="45" Background="FloralWhite" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="4"/>
+        <PasswordBox x:Name="passBox" HorizontalAlignment="Center" FontSize="20"  VerticalAlignment="Center" Width="240" Height="45" Background="FloralWhite" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="4"/>
     </Grid>
 
 

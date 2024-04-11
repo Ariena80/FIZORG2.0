@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System.Data;
+using System.Data.SqlClient;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -26,17 +28,12 @@ namespace AltSport
         {
 
         }
-
         private void Vhod_Click(object sender, RoutedEventArgs e)
-        {
-            Head head = new Head();
-            head.Show();
-            Close();
+            {
+              Head head = new Head();   
+              head.Show();
+              Close();
+            }
         }
 
-        private void PasswordBox_MouseEnter(object sender, MouseEventArgs e)
-        {
-
-        }
-    }
 }

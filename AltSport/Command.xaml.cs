@@ -15,35 +15,20 @@ using System.Windows.Shapes;
 namespace AltSport
 {
     /// <summary>
-    /// Логика взаимодействия для Add.xaml
+    /// Логика взаимодействия для Command.xaml
     /// </summary>
-    public partial class Add : Window
+    public partial class Command : Window
     {
-        public Add()
+        public Command()
         {
             InitializeComponent();
         }
 
         private void Back_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Head head = new Head(); 
+            Head head = new Head();
             head.Show();
             Close();
         }
-
-        private void Command_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            Command command = new Command();
-            command.Show();
-            Close();
-        }
-
-        private void Individ_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            Individ individ = new Individ();
-            individ.Show();
-            Close();
-        }
-
     }
 }

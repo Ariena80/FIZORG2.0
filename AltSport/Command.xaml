@@ -5,12 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AltSport"
         mc:Ignorable="d"
-        Title="Добавление команды" Background="BlueViolet" Height="600" Width="800" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen" WindowState="Normal" WindowStyle="SingleBorderWindow">
+        Title="Добавление команды" Background="#8a2be2" Height="600" Width="800" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen" WindowState="Normal" WindowStyle="SingleBorderWindow">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -18,35 +15,20 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Grid Grid.Row="3">
-            <Image Source="/res/back.jpg" Margin="0 70 60 30" MouseDown="Back_MouseDown"/>
-            <TextBlock x:Name="Back" Text="Вернуться" Background="#8a2be2" Foreground="#87ff9b" FontSize="15" HorizontalAlignment="Left"  FontFamily="Cascadia Mono" Margin="10 117 -1 8" MouseDown="Back_MouseDown" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="4"></TextBlock>
+        <Grid Grid.Column="0"> 
+            <Image x:Name="Baskt" Source="/res/basketball.jpg" MouseDown="Baskt_MouseDown" Margin="10"/>
         </Grid>
 
-        <Grid Grid.RowSpan="1" Grid.Row="1" Grid.Column="1">
-            <Image Source="/res/basketball.jpg" Margin="10 -60 10 60"/>
+        <Grid Grid.Column="1">
+            <Image x:Name="Foot" Source="/res/football.jpg" MouseDown="Foot_MouseDown" Margin="10"/>
         </Grid>
-
-        <Grid  Grid.RowSpan="1" Grid.Row="1" Grid.Column="3">
-            <Image Source="/res/cibersport.jpg" Margin="10 -60 10 60"/>
+        <Grid Grid.Column="2">
+            <Image x:Name="Valey" Source="/res/valeyball.jpg" MouseDown="Valey_MouseDown" Margin="10"/>
         </Grid>
-        
-        <Grid  Grid.RowSpan="3" Grid.Row="2" Grid.Column="1">
-            <Image Source="/res/football.jpg" Margin="10 -10 10 10"/>
+        <Grid Grid.Column="4" >
+            <Image x:Name="Kanat" Source="/res/kanat.jpg" MouseDown="Kanat_MouseDown" Margin="10"/>
         </Grid>
-        
-        <Grid  Grid.RowSpan="3" Grid.Row="2" Grid.Column="3">
-            <Image Source="/res/valeyball.jpg" Margin="10 -10 10 10"/>
-        </Grid>
-
-        <Grid Grid.Row="2" Grid.Column="2">
-            <Image Source="/res/doppp.jpg" Margin="10 -70 10 70"/>
-        </Grid>
-
-
-
     </Grid>
 </Window>

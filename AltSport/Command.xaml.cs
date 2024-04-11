@@ -30,5 +30,27 @@ namespace AltSport
             head.Show();
             Close();
         }
+
+        private void Baskt_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Basketball basketball = new Basketball();
+            basketball.Show();
+            Close();
+        }
+
+        private void Foot_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Valey_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Kanat_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

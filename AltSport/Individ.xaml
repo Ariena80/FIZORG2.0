@@ -6,5 +6,32 @@
         xmlns:local="clr-namespace:AltSport"
         mc:Ignorable="d"
         Title="Добавление команды" Background="BlueViolet" Height="600" Width="800" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen" WindowState="Normal" WindowStyle="SingleBorderWindow">
-   
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Image  x:Name="Badm" Source="/res/badminton.jpg" Margin="10" MouseDown="Badm_MouseDown" />
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Image  x:Name="Chess" Source="/res/chess.jpg" Margin="10" MouseDown="Chess_MouseDown"/>
+
+        </Grid>
+        <Grid Grid.Column="2">
+            <Image x:Name="Pin" Source="/res/pinpong.jpg" Margin="10" MouseDown="Pin_MouseDown"/>
+        </Grid>
+        <Grid Grid.Column="4" >
+            <Image x:Name="Girya" Source="/res/Girya.jpg"  Margin="10" MouseDown="Girya_MouseDown" />
+
+        </Grid>
+    </Grid>
+
 </Window>

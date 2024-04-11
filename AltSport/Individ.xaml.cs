@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
@@ -22,6 +23,28 @@ namespace AltSport
         public Individ()
         {
             InitializeComponent();
+
+            
+        }
+
+        private void Badm_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Chess_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Pin_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Girya_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
         }
     }
 }

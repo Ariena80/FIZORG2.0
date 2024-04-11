@@ -15,6 +15,7 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Column="0">
@@ -30,7 +31,9 @@
         </Grid>
         <Grid Grid.Column="4" >
             <Image x:Name="Girya" Source="/res/Girya.jpg"  Margin="10" MouseDown="Girya_MouseDown" />
-
+        </Grid>
+        <Grid Grid.Column="3" >
+            <Image x:Name="Ceber" Source="/res/cebersport.jpg" Margin="10" MouseDown="Ceber_MouseDown" />
         </Grid>
     </Grid>
 

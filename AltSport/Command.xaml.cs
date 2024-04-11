@@ -52,5 +52,10 @@ namespace AltSport
         {
 
         }
+
+        private void Ceber_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

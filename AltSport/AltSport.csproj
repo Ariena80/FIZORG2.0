@@ -16,6 +16,7 @@
     <None Remove="res\bas.jpg" />
     <None Remove="res\basketball.jpg" />
     <None Remove="res\bassic.jpg" />
+    <None Remove="res\cebersport.jpg" />
     <None Remove="res\chess.jpg" />
     <None Remove="res\cibersport.jpg" />
     <None Remove="res\command.jpg" />
@@ -44,6 +45,7 @@
     <Resource Include="res\badminton.jpg" />
     <Resource Include="res\basketball.jpg" />
     <Resource Include="res\back.jpg" />
+    <Resource Include="res\cebersport.jpg" />
     <Resource Include="res\chess.jpg" />
     <Resource Include="res\command.jpg" />
     <Resource Include="res\football.jpg" />

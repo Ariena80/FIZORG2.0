@@ -35,6 +35,9 @@
         <Grid Grid.Column="3" >
             <Image x:Name="Ceber" Source="/res/cebersport.jpg" Margin="10" MouseDown="Ceber_MouseDown" />
         </Grid>
+        <Grid Grid.Column="0">
+            <Image x:Name="Back" Source="/res/back.jpg" MouseDown="Back_MouseDown" Margin="10,506,108,-17"/>
+        </Grid>
     </Grid>
 
 </Window>

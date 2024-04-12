@@ -1,0 +1,42 @@
+﻿<Window x:Class="AltSport.Master_class"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AltSport"
+        mc:Ignorable="d"
+        Title="Мастер-класс" Background="BlueViolet" Height="600" Width="800" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen" WindowState="Normal" WindowStyle="SingleBorderWindow" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="150*"/>
+            <RowDefinition Height="150*"/>
+            <RowDefinition Height="29*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="92*"/>
+            <ColumnDefinition Width="400*"/>
+            <ColumnDefinition Width="400*"/>
+            <ColumnDefinition Width="92*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Image Source="/res/zametki.jpg" Margin="-30" />
+            <TextBlock x:Name="Master1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="117" Width="176"></TextBlock>
+        </Grid>
+        <Grid Grid.Column="2" Grid.Row="1">
+            <Image Source="/res/zametki.jpg" Margin="-30" />
+            <TextBlock x:Name="Master2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="117" Width="176"></TextBlock>
+        </Grid>
+        <Grid Grid.Column="2" Grid.Row="2">
+            <Image Source="/res/zametki.jpg" Margin="-30" />
+            <TextBlock x:Name="Master3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="117" Width="176"></TextBlock>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="2">
+            <Image Source="/res/zametki.jpg" Margin="-30" />
+            <TextBlock x:Name="Master4" HorizontalAlignment="Center" VerticalAlignment="Center" Height="117" Width="176"></TextBlock>
+        </Grid>
+        <Grid Grid.Column="0" Grid.Row="3">
+            <Image x:Name="Back" Source="/res/back.jpg" MouseDown="Back_MouseDown"/>
+        </Grid>
+    </Grid>
+</Window>

@@ -8,9 +8,10 @@
         Title="Добавление команды" Background="BlueViolet" Height="600" Width="800" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen" WindowState="Normal" WindowStyle="SingleBorderWindow">
     <Grid >
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="46*"/>
+            <RowDefinition Height="19*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -24,6 +25,9 @@
         <Grid Grid.Row="1">
             <Image Source="/res/command.jpg" MouseDown="Command_MouseDown"/>
             <TextBlock Foreground="#87ff9b" Text="Командные игры" FontSize="30" Height="45" Margin="60,185,79,-30" FontFamily="Britannic Bold" MouseDown="Command_MouseDown"/>
+        </Grid>
+        <Grid Grid.Column="0" Grid.Row="2" Margin="0,138,317,0" Grid.RowSpan="2">
+            <Image x:Name="Back" Source="/res/back.jpg" MouseDown="Back_MouseDown" Margin="6,5,5,5"/>
         </Grid>
     </Grid>
 

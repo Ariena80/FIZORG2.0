@@ -38,12 +38,16 @@ namespace AltSport
 
         private void BtnSchedule_Click(object sender, RoutedEventArgs e)
         {
-
+            EventWindow eventWindow = new EventWindow();
+            eventWindow.Show();
+            Close();
         }
 
         private void BtnMaster_Click(object sender, RoutedEventArgs e)
         {
-
+            Master_class master_Class = new Master_class();
+            master_Class.Show();
+            Close();
         }
 
         private void BtnResult_Click(object sender, RoutedEventArgs e)

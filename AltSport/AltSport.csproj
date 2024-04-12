@@ -33,6 +33,7 @@
     <None Remove="res\shahmati.jpg" />
     <None Remove="res\sports-sportsmanias.gif" />
     <None Remove="res\valeyball.jpg" />
+    <None Remove="res\zametki.jpg" />
     <None Remove="valeyball.jpg" />
   </ItemGroup>
 
@@ -55,6 +56,7 @@
     <Resource Include="res\logotip.jpg" />
     <Resource Include="res\pinpong.jpg" />
     <Resource Include="res\valeyball.jpg" />
+    <Resource Include="res\zametki.jpg" />
   </ItemGroup>
 
 </Project>

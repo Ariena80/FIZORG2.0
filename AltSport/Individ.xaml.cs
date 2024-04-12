@@ -51,5 +51,12 @@ namespace AltSport
         {
 
         }
+
+        private void Back_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Head head = new Head();
+            head.Show();
+            Close();
+        }
     }
 }

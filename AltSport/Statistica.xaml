@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AltSport"
         mc:Ignorable="d"
-        Title="Statistica" Height="450" Width="800">
+        Title="Результаты" Background="BlueViolet" Height="600" Width="800" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen" WindowState="Normal" WindowStyle="SingleBorderWindow" >
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="0" Name="lblName" Content="Enter Name"/>
+        <Label Grid.Column="0" Grid.Row="1" Content="Enter Address" />
+        <Label Grid.Column="0" Grid.Row="2" Content="Enter Company" />
+        <TextBox Grid.Column="1" Grid.Row="0" Width="200"/>
+        <TextBox Grid.Column="1" Grid.Row="1" Width="200" />
+        <TextBox Grid.Column="1" Grid.Row="2" Width="200"/>
     </Grid>
 </Window>

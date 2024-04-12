@@ -52,7 +52,9 @@ namespace AltSport
 
         private void BtnResult_Click(object sender, RoutedEventArgs e)
         {
-
+            Statistica statistica = new Statistica();
+            statistica.Show();
+            Close();
         }
 
         private void BtnEventSec_Click(object sender, RoutedEventArgs e)

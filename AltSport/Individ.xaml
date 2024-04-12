@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AltSport"
         mc:Ignorable="d"
-        Title="Добавление команды" Background="BlueViolet" Height="600" Width="800" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen" WindowState="Normal" WindowStyle="SingleBorderWindow">
+        Title="Добавление команды" Background="BlueViolet" Height="1000" Width="1000" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen" WindowState="Normal" WindowStyle="SingleBorderWindow">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -36,7 +36,7 @@
             <Image x:Name="Ceber" Source="/res/cebersport.jpg" Margin="10" MouseDown="Ceber_MouseDown" />
         </Grid>
         <Grid Grid.Column="0">
-            <Image x:Name="Back" Source="/res/back.jpg" MouseDown="Back_MouseDown" Margin="10,506,108,-17"/>
+            <Image x:Name="Back" Source="/res/back.jpg" MouseDown="Back_MouseDown" Margin="10,874,108,-17"/>
         </Grid>
     </Grid>
 

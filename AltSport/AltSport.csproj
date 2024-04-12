@@ -12,6 +12,7 @@
     <None Remove="logotip.jpg" />
     <None Remove="res\2.png" />
     <None Remove="res\back.jpg" />
+    <None Remove="res\badminton %282%29.jpg" />
     <None Remove="res\badminton.jpg" />
     <None Remove="res\bas.jpg" />
     <None Remove="res\basketball.jpg" />
@@ -25,11 +26,22 @@
     <None Remove="res\Girya.jpg" />
     <None Remove="res\individ.jpg" />
     <None Remove="res\kanat.jpg" />
+    <None Remove="res\logo.jpg" />
+    <None Remove="res\logobasket.jpg" />
+    <None Remove="res\logocebr.jpg" />
+    <None Remove="res\logochess.jpg" />
+    <None Remove="res\logofootball.jpg" />
+    <None Remove="res\logopinpong.jpg" />
+    <None Remove="res\logosport.jpg" />
     <None Remove="res\logotip.jpg" />
     <None Remove="res\logotipfull.jpg" />
+    <None Remove="res\logoval.jpg" />
     <None Remove="res\nastol.tenis.jpg" />
     <None Remove="res\nastol.tennis.jpg" />
+    <None Remove="res\pdss.jpg" />
+    <None Remove="res\photo_5_2024-04-12_13-13-10.jpg" />
     <None Remove="res\pinpong.jpg" />
+    <None Remove="res\result.jpg" />
     <None Remove="res\shahmati.jpg" />
     <None Remove="res\sports-sportsmanias.gif" />
     <None Remove="res\valeyball.jpg" />
@@ -43,6 +55,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="res\badminton (2).jpg" />
     <Resource Include="res\badminton.jpg" />
     <Resource Include="res\basketball.jpg" />
     <Resource Include="res\back.jpg" />
@@ -53,8 +66,16 @@
     <Resource Include="res\Girya.jpg" />
     <Resource Include="res\individ.jpg" />
     <Resource Include="res\kanat.jpg" />
+    <Resource Include="res\logobasket.jpg" />
+    <Resource Include="res\logocebr.jpg" />
+    <Resource Include="res\logochess.jpg" />
+    <Resource Include="res\logofootball.jpg" />
+    <Resource Include="res\logopinpong.jpg" />
     <Resource Include="res\logotip.jpg" />
+    <Resource Include="res\logoval.jpg" />
+    <Resource Include="res\pdss.jpg" />
     <Resource Include="res\pinpong.jpg" />
+    <Resource Include="res\result.jpg" />
     <Resource Include="res\valeyball.jpg" />
     <Resource Include="res\zametki.jpg" />
   </ItemGroup>

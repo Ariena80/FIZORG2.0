@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,11 +23,10 @@ namespace AltSport
         public Head()
         {
             InitializeComponent();
-            
-            btnSchedule.Content = " Расписание спортивных\n мероприятий";
-            btnEventSec.Content = " Расписание спортивных\n секций";
-            
-           
+
+            btnSchedule.Content = "Расписание\nсоревнований";
+            btnEventSec.Content = "Распиcание\nтренировок";
+            btnResult.Content = "Результаты\nсоревнований";
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
@@ -67,11 +67,19 @@ namespace AltSport
 
         }
 
-        private void BtnExit_Click(object sender, RoutedEventArgs e)
+        private void Exit_MouseDown(object sender, MouseButtonEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
-            Close();    
+            Close(); 
         }
+
+        private void BtnInfo_Click(object sender, RoutedEventArgs e)
+        {
+            Info info = new Info();
+            info.Show();
+
+        }
+
     }
 }

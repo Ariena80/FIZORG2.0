@@ -5,30 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AltSport"
         mc:Ignorable="d"
-        Title="Добавление команды" Background="BlueViolet" Height="600" Width="800" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen" WindowState="Normal" WindowStyle="SingleBorderWindow">
+        Background="BlueViolet" Height="600" Width="800" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen" WindowState="Normal" WindowStyle="SingleBorderWindow" ResizeMode="NoResize">
     <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="65*"/>
+            <RowDefinition Height="281*"/>
             <RowDefinition Height="65*"/>
-            <RowDefinition Height="46*"/>
-            <RowDefinition Height="19*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Grid Grid.Row="1" Grid.Column="1">
-            <Image Source="/res/individ.jpg" MouseDown="Individ_MouseDown" />
-            <TextBlock Foreground="#87ff9b" Text="Индивидуальные игры" FontSize="30" Height="45" Margin="25,185,0,-30" FontFamily="Britannic Bold" MouseDown="Individ_MouseDown"/>
-        </Grid>
 
-        <Grid Grid.Row="1">
-            <Image Source="/res/command.jpg" MouseDown="Command_MouseDown"/>
-            <TextBlock Foreground="#87ff9b" Text="Командные игры" FontSize="30" Height="45" Margin="60,185,79,-30" FontFamily="Britannic Bold" MouseDown="Command_MouseDown"/>
-        </Grid>
-        <Grid Grid.Column="0" Grid.Row="2" Margin="0,138,317,0" Grid.RowSpan="2">
-            <Image x:Name="Back" Source="/res/back.jpg" MouseDown="Back_MouseDown" Margin="6,5,5,5"/>
-        </Grid>
+        <Label Grid.ColumnSpan="2" Content="Выберите направление" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="40" Foreground="#87ff9b" FontFamily="Arial Black"></Label>
+        
+        <Image x:Name="Command" Grid.Column="0" Grid.Row="1" Source="/res/command.jpg" Margin="70" MouseDown="Command_MouseDown"/>
+
+        <Label Grid.Row="1" Content="Командные игры" HorizontalContentAlignment="Center" FontSize="30" Foreground="#87ff9b" FontFamily="Arial Black" Margin="20" MouseDown="Command_MouseDown"></Label>
+        
+        <Image x:Name="Individ" Grid.Row="1" Grid.Column="2" Source="/res/individ.jpg" Margin="60" MouseDown="Individ_MouseDown"/>
+
+        <Label Grid.Row="1" Grid.Column="2" Content="Индивидульные игры"  HorizontalContentAlignment="Center" FontSize="30" Foreground="#87ff9b" FontFamily="Arial Black" Margin="0 20 10 10" MouseDown="Individ_MouseDown"></Label>
+
+        <Image Source="/res/back.jpg" HorizontalAlignment="Left" Margin="20"/>
+
+
     </Grid>
 
 </Window>

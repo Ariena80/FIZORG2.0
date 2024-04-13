@@ -5,39 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AltSport"
         mc:Ignorable="d"
-        Title="Добавление команды" Background="BlueViolet" Height="1000" Width="1000" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen" WindowState="Normal" WindowStyle="SingleBorderWindow">
+        Background="BlueViolet" Height="800" Width="1000"  WindowStartupLocation="CenterScreen" WindowState="Normal" WindowStyle="SingleBorderWindow" ResizeMode="NoResize">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="55*"/>
+            <RowDefinition Height="247*"/>
+            <RowDefinition Height="55*"/>
+        </Grid.RowDefinitions>
 
-        <Grid Grid.Column="0">
-            <Image  x:Name="Badm" Source="/res/badminton.jpg" Margin="10" MouseDown="Badm_MouseDown" />
-        </Grid>
+        <Image Source="/res/back.jpg" Margin="30" HorizontalAlignment="Left" VerticalAlignment="Top" MouseDown="Back_MouseDown"/>
 
-        <Grid Grid.Column="1">
-            <Image  x:Name="Chess" Source="/res/chess.jpg" Margin="10" MouseDown="Chess_MouseDown"/>
+        <Image Grid.Row="1" Source="/res/badminton.jpg" Margin="10 -70 10 -70" MouseDown="Badm_MouseDown" />
 
-        </Grid>
-        <Grid Grid.Column="2">
-            <Image x:Name="Pin" Source="/res/pinpong.jpg" Margin="10" MouseDown="Pin_MouseDown"/>
-        </Grid>
-        <Grid Grid.Column="4" >
-            <Image x:Name="Girya" Source="/res/Girya.jpg"  Margin="10" MouseDown="Girya_MouseDown" />
-        </Grid>
-        <Grid Grid.Column="3" >
-            <Image x:Name="Ceber" Source="/res/cebersport.jpg" Margin="10" MouseDown="Ceber_MouseDown" />
-        </Grid>
-        <Grid Grid.Column="0">
-            <Image x:Name="Back" Source="/res/back.jpg" MouseDown="Back_MouseDown" Margin="10,874,108,-17"/>
-        </Grid>
+        <Image Grid.Row="1" Grid.Column="1" Source="/res/chess.jpg" Margin="10 -70 10 -70" MouseDown="Chess_MouseDown"/>
+
+        <Image  Grid.Row="1" Grid.Column="2" Source="/res/pinpong.jpg" Margin="10 -70 10 -70" MouseDown="Pin_MouseDown"/>
+
+        <Image Grid.Row="1" Grid.Column="3" Source="/res/Girya.jpg" Margin="10 -70 10 -70" MouseDown="Girya_MouseDown"/>
+
+
     </Grid>
 
 </Window>

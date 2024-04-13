@@ -47,11 +47,6 @@ namespace AltSport
 
         }
 
-        private void Ceber_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
         private void Back_MouseDown(object sender, MouseButtonEventArgs e)
         {
             Head head = new Head();

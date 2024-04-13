@@ -5,44 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AltSport"
         mc:Ignorable="d"
-        Title="Авторизация" Background="BlueViolet" Height="450" Width="650" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen" WindowState="Normal" WindowStyle="SingleBorderWindow" >
+        Background="BlueViolet" Height="250" Width="450"  WindowStartupLocation="CenterScreen" WindowState="Normal" WindowStyle="SingleBorderWindow" ResizeMode="NoResize">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition MaxWidth="160"/>
+            <ColumnDefinition MaxWidth="200"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="81*"/>
-            <RowDefinition Height="27*"/>
-            <RowDefinition Height="73*"/>
-            <RowDefinition Height="35*"/>
-            <RowDefinition Height="73*"/>
-            <RowDefinition Height="95*"/>
+            <RowDefinition Height="39*"/>
             <RowDefinition Height="50*"/>
-
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="39*"/>
         </Grid.RowDefinitions>
+        <Label Grid.ColumnSpan="2" Content="ССК «КРАСНЫЕ ВОЛКИ»" Foreground="#87ff9b" FontSize="25" FontFamily="Arial Black" VerticalAlignment="Center" Margin="54,0,-54,0"/>
 
-        <StackPanel Grid.Column="1" Grid.Row="0">
-            <Grid Grid.ColumnSpan="2">
-                <TextBlock Text="ССК «КРАСНЫЕ ВОЛКИ»" FontSize="30" FontFamily="Cooper Black" VerticalAlignment="Top" Foreground="#87ff9b" Margin="0,26,-60,0"/>
-            </Grid>
-        </StackPanel>
+        <Label Grid.Row="1" Content="Логин" Foreground="#87ff9b" FontSize="20" FontFamily="Arial Black" HorizontalAlignment="Right" VerticalAlignment="Center">
+        </Label>
 
-        <Grid Grid.Row="4" Grid.ColumnSpan="3" Margin="162,73,162,0" Grid.RowSpan="3">
-            <Button Content="Войти" Click="Vhod_Click" Background="#87ff9b" FontSize="15" FontFamily="Britannic Bold"  Width="240" Height="45">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="10"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-        </Grid>
-        <TextBlock Text="Логин" FontSize="20" Foreground="#87ff9b" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Cooper Std Black" Grid.Column="1" Margin="0,5,0,0" Height="24" Width="62" Grid.Row="1" Grid.RowSpan="2"/>
-        <TextBox x:Name="textBoxLogin" FontSize="20" Background="FloralWhite" VerticalContentAlignment="Center" Grid.Column="1" Width="240" Height="45" Grid.Row="2" MaxLength="10"/>
+        <Label Grid.Row="2" Content="Пароль" Foreground="#87ff9b" FontSize="20" FontFamily="Arial Black" HorizontalAlignment="Right" VerticalAlignment="Center">
+        </Label>
 
-        <TextBlock Text="Пароль" FontSize="20" Foreground="#87ff9b" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Cooper Std Black" Grid.Column="1" Margin="0,12,0,0" Grid.Row="3" Height="24" Width="78" Grid.RowSpan="2"/>
-        <PasswordBox x:Name="passBox" HorizontalAlignment="Center" FontSize="20"  VerticalAlignment="Center" Width="240" Height="45" Background="FloralWhite" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="4"/>
+        <TextBox Grid.Row="1" Grid.Column="2" Width="200" Height="30" FontSize="15" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" MaxLength="10">
+        </TextBox>
+
+        <PasswordBox Grid.Row="2" Grid.Column="2" Width="200" Height="30" FontSize="15" HorizontalContentAlignment="Left" VerticalContentAlignment="Center">
+        </PasswordBox>
+
+        <Button  Grid.ColumnSpan="2" Grid.Row="3" Content="Войти" Click="Vhod_Click" Background="#87ff9b" FontSize="15" FontFamily="Arial Black" VerticalAlignment="Center" Height="40" Margin="67,0,-32,0">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
     </Grid>
 
 

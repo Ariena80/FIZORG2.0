@@ -7,6 +7,46 @@
         mc:Ignorable="d"
         Height="350" Width="300" Background="BlueViolet" WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow" ResizeMode="NoResize"  >
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Image x:Name="Crest" HorizontalAlignment="Right" Margin="10 0 0 60" Source="/res/crest.jpg"  MouseDown="Crest_MouseDown"/>
+
+        <Button Grid.Row="1" x:Name="Manager" Content="Состав менеджеров" Background="#87ff9b" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" Click="Manager_Click" Margin="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="25"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Grid.Row="0" x:Name="Partner" Content="Партнёры" Background="#87ff9b" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" Click="Partner_Click" Margin="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="25"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Grid.Row="2" x:Name="Awards" Content="Учёт наградной продукции" Background="#87ff9b" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" Click="Awards_Click"  Margin="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="25"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Grid.Row="3" x:Name="Docks" Content="Документация" Background="#87ff9b" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Black" Click="Docks_Click" Margin="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="25"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
     </Grid>
 </Window>

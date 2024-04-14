@@ -21,6 +21,7 @@
     <None Remove="res\chess.jpg" />
     <None Remove="res\cibersport.jpg" />
     <None Remove="res\command.jpg" />
+    <None Remove="res\crest.jpg" />
     <None Remove="res\doppp.jpg" />
     <None Remove="res\Exit1.jpg" />
     <None Remove="res\football.jpg" />
@@ -65,6 +66,7 @@
     <Resource Include="res\cebersport.jpg" />
     <Resource Include="res\chess.jpg" />
     <Resource Include="res\command.jpg" />
+    <Resource Include="res\crest.jpg" />
     <Resource Include="res\Exit1.jpg" />
     <Resource Include="res\football.jpg" />
     <Resource Include="res\Girya.jpg" />

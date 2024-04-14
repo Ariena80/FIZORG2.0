@@ -22,6 +22,34 @@ namespace AltSport
         public Info()
         {
             InitializeComponent();
+            Awards.Content = "Учёт наградной\nпродукции";
+        }
+
+        private void Awards_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Partner_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Manager_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Docks_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Crest_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Head head = new Head();
+            head.Show();
+            Close();
         }
     }
 }
